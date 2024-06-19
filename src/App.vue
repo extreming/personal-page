@@ -1,10 +1,7 @@
 <template>
-  <div :class="mergeClass">Hello</div>
-  <div class="bg-blue-500 text-center">World</div>
+  <Header />
 </template>
 
 <script setup>
-import { twMerge } from 'tailwind-merge';
-
-const mergeClass = twMerge('bg-red-50 bg-blue-500 text-center text-left')
+import Header from './components/Header.vue'
 </script>
