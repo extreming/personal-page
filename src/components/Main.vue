@@ -1,5 +1,9 @@
 <template>
-  <main>main</main>
+  <main class="min-h-screen">
+    <Introduce />
+  </main>
 </template>
 
-<script setup></script>
+<script setup>
+import Introduce from './sections/Introduce.vue'
+</script>

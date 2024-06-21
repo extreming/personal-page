@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
+    "class-variance-authority": "^0.7.0",
     "lucide-vue-next": "^0.395.0",
     "vue": "^3.4.21"
   },
