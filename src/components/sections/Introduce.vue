@@ -3,7 +3,7 @@
     <div class="flex items-center justify-center md:order-last md:flex-grow mad:justify-end">
       <div class="relative w-[280px] h-[300px] md:w-[320px] md:h-[360px]">
         <img src="../../assets/img/1.jpg" alt="阿伦的头像"
-          class="absolute z-10 md:left-0 md:top-0 max-md:left-5 w-[240px] h-[280px] border-8 border-gray-50 md:w-[280px] md:h-[320px] object-cover" />
+          class="absolute z-10 md:left-0 md:top-0 max-md:left-5 w-[240px] h-[280px] border-8 border-gray md:w-[280px] md:h-[320px] object-cover" />
         <div
           class="absolute max-md:top-5 md:bottom-0 md:right-0 w-[280px] h-[280px] border-8 border-tranparent bg-gray-200 md:w-[280px] md:h-[320px]">
         </div>
@@ -41,7 +41,7 @@
           <Github />
         </IconButton>
         <IconButton>
-          <img src="../../assets/img/wechat.svg" alt="">
+          <Wechat />
         </IconButton>
         <IconButton>
           <Mail />
@@ -53,6 +53,7 @@
 
 <script setup>
 import IconButton from '../common/IconButton.vue'
+import Wechat from '../common/Wechat.vue'
 import { MapPin, Github, Mail  } from 'lucide-vue-next'
 import Container from '../common/Container.vue'
 import Typography from '../common/Typography.vue'
