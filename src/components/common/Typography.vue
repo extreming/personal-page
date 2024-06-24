@@ -1,9 +1,14 @@
 <template>
-  <slot :class="typographyVariants()"></slot>
+  <Tag>
+    <slot></slot>
+  </Tag>
 </template>
 
 <script setup>
-import { cva } from 'class-variance-authority';
+import { cva } from 'class-variance-authority'
+import { computed, h } from 'vue'
+
+const props = defineProps(['variant'])
 
 const typographyVariants = cva('text-gray-600 text-normal', {
   variants: {
@@ -20,5 +25,11 @@ const typographyVariants = cva('text-gray-600 text-normal', {
   defaultVariants: {
     variant: 'body2'
   }
-});
+})
+
+const className = computed(() => typographyVariants({ variant: props.variant }))
+
+const tagName = props.variant || 'p';
+const Tag = h(tagName, { class: className.value });
+
 </script>
