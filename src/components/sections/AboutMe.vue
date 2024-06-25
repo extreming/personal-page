@@ -12,7 +12,7 @@ import Typography from '../common/Typography.vue';
       <div class="flex justify-center">
         <div class="relative w-[320px] h-[380px] md:w-[380px] md:h-[460px] lg:w-[440px] lg:h-[520px]">
           <img
-            class="absolute z-10 w-[280px] h-[360px] md:w-[340px] md:h-[420px] lg:w-[400px] lg:h-[480px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0"
+            class="absolute z-10 w-[280px] h-[360px] md:w-[340px] md:h-[420px] lg:w-[400px] lg:h-[480px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 object-cover"
             alt="" src="../../assets/img/1.jpg">
           <div
             class="absolute w-[280px] h-[360px] md:w-[340px] md:h-[420px] lg:w-[400px] lg:h-[480px] border-8 border-transparent bg-gray-200 max-md:top-5 md:left-0 md:bottom-0">
