@@ -10,6 +10,17 @@ import { computed, h } from 'vue'
 
 const props = defineProps(['variant'])
 
+const elementMapping = {
+  h1: 'h1',
+  h2: 'h2',
+  h3: 'h3',
+  subtitle: 'p',
+  body1: 'p',
+  body2: 'p',
+  body3: 'p',
+  li: 'li'
+}
+
 const typographyVariants = cva('text-gray-600 text-normal', {
   variants: {
     variant: {
@@ -29,7 +40,7 @@ const typographyVariants = cva('text-gray-600 text-normal', {
 
 const className = computed(() => typographyVariants({ variant: props.variant }))
 
-const tagName = props.variant || 'p';
+const tagName = props.variant ? elementMapping[props.variant] : 'p';
 const Tag = h(tagName, { class: className.value });
 
 </script>
